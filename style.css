@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #1c1c1c;
+    --text: #e0e0e0;
+    --container: #d35400;
+    --shadow: #081f30;
+}
+
+body{
+   background-color:  var(--background);
+   display: flex;
+   justify-content: center;
+   color: var(--text);
+   font-family: 'Bebas Neue', sans-serif;
+   width: 100vw;
+   height: 100vh;
+   align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+    margin-top: 50px;
+    background-color: var(--container);
+    width: 800px;
+    height:200px;
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow) 60px 60px 30px, var(--shadow) -50px -50px 30px;   
+    overflow: hidden;
+    margin: 30px auto 0 auto;
+}
+.titleImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.titleImg2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.titleDark{
+    background-color: var(--background);
+    width: 500px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.start{
+    background-color: var(--container);
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow) 30px 30px 15px, var(--shadow) -25px -25px 15px;
+    cursor: pointer;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.divider{
+    width:20px;
+    height:auto;
+    display:inline-block;
+}
+
+button{
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'BEBAS NEUE', sans-serif;
+    padding: 30px; 
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #081f30;
+    color: var(--text);
+    box-shadow: var(--shadow) 10px 10px 5px, var(--shadow) -5px -5px 5px;
+}
+
+.question {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--container);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: var(--shadow) 30px 30px 15px, var(--shadow) -25px -25px 15px;
+  gap: 20px;
+  max-width: 600px;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .title {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .start {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .quiz-container {
+    width: 90%;
+    padding: 20px;
+    margin-top: 40vw;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+  .titleImg,
+  .titleImg2 {
+    display: none;
+  }
+}
+    
+
+
+
